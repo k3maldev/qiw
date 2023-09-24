@@ -1,0 +1,75 @@
+{
+  "name": "qiw",
+  "version": "0.0.1-beta.1",
+  "packageManager": "yarn@1.22.19",
+  "description": "Qiw.js is a free, easy-to-use, performant and fast Javascript library that helps maintain users' applications without any problems.",
+  "author": {
+    "email": "k3maldev@gmail.com",
+    "name": "Kemal Çelik"
+  },
+  "bugs": {
+    "email": "k3maldev@gmail.com",
+    "url": "https://github.com/k3maldev/qiw/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "exports": {
+    ".": {
+      "default": "./src/esm/main.js",
+      "import": "./src/esm/main.js",
+      "require": "./src/cjs/main.cjs"
+    }
+  },
+  "homepage": "https://k3maldev.github.io/qiw",
+  "keywords": [
+    "backend",
+    "back-end",
+    "backend-tool",
+    "backend-tools",
+    "back-end-tool",
+    "back-end-tools",
+    "coverage",
+    "coverage-tool",
+    "coverage-tools",
+    "qiw.js",
+    "qiw",
+    "security",
+    "security-tool",
+    "security",
+    "library",
+    "framework",
+    "server",
+    "express",
+    "schema",
+    "database",
+    "javascript",
+    "node.js",
+    "nodejs",
+    "log",
+    "logger",
+    "logging",
+    "debug"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k3maldev/qiw"
+  },
+  "main": "./src/esm/main.js",
+  "type": "module",
+  "scripts": {
+    "cjs": "node __test__/commonjs.cjs",
+    "esm": "node __test__/index.js",
+    "publish": "yarn && npm publish"
+  },
+  "dependencies": {
+    "@types/node": "^20.6.4",
+    "xml2js": "^0.6.2",
+    "yaml": "^2.3.2"
+  },
+  "devDependencies": {
+    "ansi-colors": "^4.1.3",
+    "chalk": "^5.3.0"
+  }
+}
